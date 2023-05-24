@@ -22,6 +22,7 @@ public class Carrera  implements Participacion{
         corredores=new ArrayList<>();
     }
 // acuerdate de los getter y setter, lo tienes para implementar lo que quieras agregar
+    // sice es el tamaño del array
     @Override
     public void competir() {
         Random random=new Random();
@@ -70,7 +71,8 @@ public class Carrera  implements Participacion{
         System.out.println("Oro "+c.get(3)+" ");
     }
     public void imprimirClasificacion(HashMap<Integer, Corredor> clasificacion) {
-      //puedo recorrerla con forEach o con iterator un map
+      //puedo recorrerla con forEach o con iterator un ash
+        //el entry solo se puede usar con el mapa normal
         for (Integer elemento:clasificacion.keySet()
              ) {
             Corredor corredor=clasificacion.get(elemento);

@@ -18,7 +18,7 @@ public class Ejercicio5 {
 
         Set<Integer>listaNumerosNegativo=new HashSet<>(listaNumerosEnteros);
         List<Integer> integers = listaNumerosNegativo.stream().filter(numero -> numero < 0).toList();
-        integers.forEach(imprimir-> System.out.println(imprimir));
+        integers.forEach(System.out::println);
         System.out.println("////////////////////////");
 
 
