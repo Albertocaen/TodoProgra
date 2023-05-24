@@ -16,7 +16,7 @@ public class TestconLocalDate {
         clientes.add((new Clientes2("55555555E","Esperanza",LocalDate.of(1972,2,2))));
 
       // ejemeplo trabajado con localdate directamente
-
+        //el lambda es sorted(c1,c2)->c1.getfecha.compareto(c2.getfecha)))
        clientes.stream().sorted(Comparator.comparing(Clientes2::getFechaDeNacimiento)).forEach(imprimir-> System.out.println(imprimir));
     }
 }

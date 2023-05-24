@@ -71,10 +71,10 @@ public class Carrera  implements Participacion{
     }
     public void imprimirClasificacion(HashMap<Integer, Corredor> clasificacion) {
       //puedo recorrerla con forEach o con iterator un map
-        for (Integer i:clasificacion.keySet()
+        for (Integer elemento:clasificacion.keySet()
              ) {
-            Corredor corredor=clasificacion.get(i);
-            System.out.println(i+ " : "+corredor.toString());
+            Corredor corredor=clasificacion.get(elemento);
+            System.out.println(elemento+ " : "+corredor.toString());
         }
 
     }
